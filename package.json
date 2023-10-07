@@ -16,6 +16,9 @@
     "add-domain": "node ./scripts/add",
     "clean": "node ./scripts/clean"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "author": "Romain Simon <contact@romainsimon.net>",
   "license": "MIT",
   "keywords": [
