@@ -4,7 +4,7 @@
   "description": "Email validation with more than 10K disposable/temporary email domains",
   "repository": {
     "type": "git",
-    "url": "https://github.com/maaaathis/fakemail-guard.git"
+    "url": "git+https://github.com/maaaathis/fakemail-guard.git"
   },
   "main": "index.js",
   "typings": "index.d.ts",
