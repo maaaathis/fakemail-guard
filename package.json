@@ -1,12 +1,13 @@
 {
-  "name": "emailvalid",
-  "version": "1.0.4",
+  "name": "fakemail-guard",
+  "version": "1.0.0",
   "description": "Email validation with more than 10K disposable/temporary email domains",
   "repository": {
     "type": "git",
-    "url": "https://github.com/romainsimon/emailvalid.git"
+    "url": "https://github.com/maaaathis/fakemail-guard.git"
   },
   "main": "index.js",
+  "typings": "index.d.ts",
   "scripts": {
     "test": "standard && nyc --reporter=html --reporter=text mocha \"./{,!(node_modules)/**/}*.spec.js\"",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
