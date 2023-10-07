@@ -43,13 +43,13 @@ Email Validation has **0 dependency, 100% coverage, and is [fully configurable](
 Install using [`npm`](https://www.npmjs.com/package/emailvalid):
 
 ```bash
-npm install emailvalid
+npm install fakemail-guard
 ```
 
 or Yarn [`yarn`](https://yarnpkg.com/en/package/emailvalid):
 
 ```bash
-yarn add emailvalid
+yarn add fakemail-guard
 ```
 
 ## Usage
@@ -59,7 +59,7 @@ Email Validation is initialized with a list of default domains
 ### Simple usage example
 
 ```javascript
-const EmailValidation = require('emailvalid')
+const EmailValidation = require('fakemail-guard')
 const ev = new EmailValidation()
 
 // This email will be invalid because it is a free email
@@ -93,13 +93,13 @@ You can for example choose to allow freemails, and add a domain baddomain.com in
 #### Advanced configuration example
 
 ```javascript
-const EmailValidation = require('emailvalid')
+const EmailValidation = require('fakemail-guard')
 const ev = new EmailValidation({ allowFreemail: true, blacklist: ['baddomain.com'] })
 
 // This one should have result.valid = true because we allowed free mails such as gmail.com
 ev.check('random@gmail.com')
 
-// But this one is blacklisted now 
+// But this one is blacklisted now
 ev.check('paul@baddomain.com')
 
 ```
@@ -123,7 +123,7 @@ In case you need to update options after initialization, you can do it on the fl
 
 
 ```javascript
-const EmailValidation = require('emailvalid')
+const EmailValidation = require('fakemail-guard')
 const ev = new EmailValidation()
 
 // This adds a new domain as invalid
@@ -157,7 +157,7 @@ Errors contains strings and can be one of :
 #### Example :
 
 ```javascript
-const EmailValidation = require('emailvalid')
+const EmailValidation = require('fakemail-guard')
 const ev = new EmailValidation()
 
 const result = ev.check('RANDOM@gmail.com')
