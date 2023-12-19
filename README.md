@@ -1,22 +1,10 @@
-<h1 align="center">Email Validation</h1>
+<h1 align="center">Fakemail Guard: Email Validation</h1>
 
-Email Validation is a library that validates email addresses and checks againts more than 10K domains used for disposable emails<br />
+Fakemail Guard is a library that validates email addresses and checks againts more than 10K domains used for disposable emails<br />
 If you want to **block disposable email addresses at signup**, or if you are a B2B company and want **only professional email adresses**, this is the solution for you :)<br />
 <br />
 
-<div align="center">
-  <!-- Build Status -->
-  <img src="https://img.shields.io/travis/romainsimon/emailvalid.svg?style=flat-square"
-    alt="Build Status" />
-  <!-- Test Coverage -->
-  <img src="https://img.shields.io/coveralls/github/romainsimon/emailvalid/master.svg?style=flat-square"
-    alt="Test Coverage" />
-  <!-- Standard -->
-  <a href="https://standardjs.com">
-    <img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square"
-      alt="Standard" />
-  </a>
-</div>
+Fakemail Guard is a maintained fork of [emailvalid](https://www.npmjs.com/package/emailvalid) with TypeScript types.
 
 <br />
 
@@ -26,7 +14,7 @@ This library does multiple verifications:
 - Disposable email address (@maildrop.cc, @fakemail.net, @trashmail.com, ...)
 - Possible typos in popular email domains
 
-Email Validation has **0 dependency, 100% coverage, and is [fully configurable](#configuration)**.
+Fakemail Guard has **0 dependency, 100% coverage, and is [fully configurable](#configuration)**.
 
 
 ## Table of Contents
@@ -40,13 +28,13 @@ Email Validation has **0 dependency, 100% coverage, and is [fully configurable](
 
 ## Installation
 
-Install using [`npm`](https://www.npmjs.com/package/emailvalid):
+Install using [`npm`](https://www.npmjs.com/package/fakemail-guard):
 
 ```bash
 npm install fakemail-guard
 ```
 
-or Yarn [`yarn`](https://yarnpkg.com/en/package/emailvalid):
+or Yarn [`yarn`](https://yarnpkg.com/en/package/fakemail-guard):
 
 ```bash
 yarn add fakemail-guard
@@ -54,7 +42,7 @@ yarn add fakemail-guard
 
 ## Usage
 
-Email Validation is initialized with a list of default domains
+Fakemail Guard is initialized with a list of default domains
 
 ### Simple usage example
 
@@ -183,6 +171,6 @@ For example `yarn add-domain freemail gmail.com`
 Then feel free to create Pull Requests :)
 
 
-## Licence
+## License
 
-[MIT License](https://github.com/romainsimon/emailvalid/blob/master/LICENSE)
+[MIT License](https://github.com/maaaathis/fakemail-guard/blob/master/LICENSE)
